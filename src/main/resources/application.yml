@@ -41,19 +41,19 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: ScreeningManage
+        - id: user19-screeningmanage
           uri: http://ScreeningManage:8080
           predicates:
             - Path=/screenings/**
-        - id: HospitalManage
+        - id: user19-hospitalmanage
           uri: http://HospitalManage:8080
           predicates:
             - Path=/hospitals/** 
-        - id: ReservationManage
+        - id: user19-reservationmanage
           uri: http://ReservationManage:8080
           predicates:
             - Path=/reservations/** 
-        - id: MyPage
+        - id: user19-mypage
           uri: http://MyPage:8080
           predicates:
             - Path= /myPages/**
